@@ -7,6 +7,36 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- <link rel="stylesheet" href="styles.css"> -->
    <title>Tech Challenge</title>
+
+   <style type="text/css">
+      a {
+         text-decoration: none;
+         color: white;
+      }
+
+      .info-anchor {
+         background-color: #4FC1E9;
+         padding: 10px;
+         font-size: 13px;
+         font-weight: bold;
+      }
+
+      .blue-anchor {
+         background-color: #4FC1E9;
+      }
+
+      .yellow-anchor {
+         background-color: #FFCD53;
+      }
+
+      .button {
+         background-color: #8BC151;
+         padding: 17px 50px 17px 50px;
+         font-size: 17px;
+         border-radius: 10px;
+      }
+
+   </style>
 </head>
 
 <body style="font-family: sans-serif; max-width: 600px; margin: 0 auto 0 auto">
@@ -21,9 +51,9 @@
 
          <tr>
             <td style="text-align: center;">
-               <img src="img/fblogo.png" alt="facebook logo">
-               <img src="img/twitterlogo.png" alt="twitter logo">
-               <img src="img/rrssicon.png" alt="rrss logo">
+               <a href="#"><img src="img/fblogo.png" alt="facebook logo"></a>
+               <a href="#"><img src="img/twitterlogo.png" alt="twitter logo" style="padding: 0 10px 0 10px;"></a>
+               <a href="#"><img src="img/rrssicon.png" alt="rrss logo"></a>
             </td>
          </tr>
       </tbody>
@@ -54,7 +84,7 @@
       <tbody style="text-align: center;">
          <tr>
             <!-- blue left column -->
-            <td style="padding: 0 25px 0 0;"> 
+            <td style="padding: 0 20px 0 0;"> 
                <div style="background-color: #4FC1E9; color: white; padding: 20px 0 20px 0;">
                   <h2 style="font-size: 32px; font-weight: 400; margin: 0;">$299</h2>
                   <p style="margin: 0;">per month</p>
@@ -63,20 +93,20 @@
                <div style="background-color: #D7F1F9; padding: 17px 0 17px 0;">
                   <h3 style="margin: 0;">Basic</h3>
                   <p>Lots of clients & users</p>
+                  <hr style="width: 80%; border: 1px solid #B3E4F5">
                   <p>250 SKU's</p>
                   <p>1 GB Storage</p>
                   <p style="margin: 0;">3,5 % transaction fee</p>
                </div>
                
                <div style="background-color: #E5E9ED;">
-                  <p style="margin: 0; padding: 30px 0 30px 0;"><a href="#"
-                     style="text-decoration: none; background-color: #4fc1e9; padding: 10px 10px 10px 10px; color: white; font-size: 13px; font-weight: bold;">Try
+                  <p style="margin: 0; padding: 30px 0 30px 0;"><a href="#" class="blue-anchor info-anchor">Try
                      a Week</a></p>
                </div>
             </td> <!-- end of blue left column -->
 
             <!-- yellow right column -->
-            <td style="padding: 0 0 0 25px;">
+            <td style="padding: 0 0 0 20px;">
                <div style="background-color: #FFCD53; color: white; padding: 20px 0 20px 0;">
                   <h2 style="font-size: 32px; font-weight: 400; margin: 0;">$499</h2>
                   <p style="margin: 0;">per month</p>
@@ -85,14 +115,14 @@
                <div style="background-color: #FFF9ED; padding: 17px 0 17px 0;">
                   <h3 style="margin: 0;">Unlimited</h3>
                   <p>Lots of clients & users</p>
+                  <hr style="width: 80%; border: 1px solid #FFD66A">
                   <p>Unlimited SKU's</p>
                   <p>20 GB Storage</p>
                   <p style="margin: 0;">3,5 % transaction fee</p>
                </div>
                
                <div style="background-color: #E5E9ED;">
-                  <p style="margin: 0; padding: 30px 0 30px 0;"><a href="#"
-                        style="text-decoration: none; background-color: #FFCD53; padding: 10px 10px 10px 10px; color: white; font-size: 13px; font-weight: bold;">Try
+                  <p style="margin: 0; padding: 30px 0 30px 0;"><a href="#" class="yellow-anchor info-anchor">Try
                         a Week</a></p>
                </div>
             </td> <!-- end of yellow right column -->
@@ -102,9 +132,9 @@
       <!-- contact section -->
       <tbody>
          <tr>
-            <td colspan="2" style="text-align: center; padding: 5px 0 20px 0;">
-               <h4 style="font-size: 25px; font-weight: 400; padding-bottom: 10px;">Want to learn more? Contact Us Today!</h4>
-               <p><a href="#" style="text-decoration: none; background-color: #8BC151; padding: 17px 50px 17px 50px; color: white; font-size: 17px; border-radius: 10px;">Contact Us</a></p>
+            <td colspan="2" style="text-align: center; padding: 30px 0 20px 0;">
+               <h4 style="font-size: 25px; font-weight: 400; padding-bottom: 20px; margin: 0;">Want to learn more? Contact Us Today!</h4>
+               <p><a href="#" class="button">Contact Us</a></p>
             </td>
          </tr>
       </tbody> <!-- end of contact section -->
@@ -115,9 +145,15 @@
    <table style="background-color: #33495D; color: white; padding: 30px 0 30px 0; margin-top: 10px; width: 100%;">
       <tbody>
          <tr>
-            <td style="text-align: right; border-right: 1px solid white; padding-right: 10px; font-size: 15px;">CompanyA.com</td>
-            <td style="text-align: center; width: min-content; font-size: 15px;">Privacy Policy</td>
-            <td style="text-align: left; border-left: 1px solid white; padding-left: 10px; font-size: 15px;">Unsubscribe</td>
+            <td style="text-align: right; border-right: 1px solid white; padding-right: 10px; font-size: 15px;">
+               <a href="#">CompanyA.com</a>
+            </td>
+            <td style="text-align: center; width: min-content; font-size: 15px;">
+               <a href="#">Privacy Policy</a>
+            </td>
+            <td style="text-align: left; border-left: 1px solid white; padding-left: 10px; font-size: 15px;">
+               <a href="#">Unsubscribe</a>
+            </td>
          </tr>
       </tbody>
    </table>
