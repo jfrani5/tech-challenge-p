@@ -36,6 +36,79 @@
          border-radius: 10px;
       }
 
+      @media screen and (max-width: 480px) {
+         .ul-media {
+            padding: 0 0 0 15px !important;
+         }
+
+         .tr-media {
+            display: grid !important;
+         }
+
+         .blue-media {
+            padding: 0 20px 25px 20px !important;
+         }
+
+         .yellow-media {
+            padding: 0 20px 0 20px !important;
+         }
+
+         .privacy-media {
+            width: 25% !important;
+         }
+      }
+
+      @media screen and (max-width: 420px) {
+         h4 {
+            display: none !important;
+         }
+
+         .contact-td-media {
+            padding: 30px 0 0 0 !important;
+         }
+
+         .contact-para-media {
+            display: grid !important;
+            height: 25px !important;
+         }
+
+         .button {
+            border-radius: 0 !important;
+         }
+
+         .footer-table-media {
+            padding: 20px 0 20px 0 !important;
+         }
+
+         .privacy-media {
+            width: 30% !important;
+            font-size: 14px !important;
+         }
+
+         .company-media {
+            padding-right: 5px !important;
+            font-size: 14px !important;
+         }
+
+         .unsubscribe-media {
+            padding-left: 5px !important;
+            font-size: 14px !important;
+         }
+      }
+
+      @media screen and (max-width: 330px) {
+         .heading-td-media {
+            font-size: 15px !important;
+         }
+
+         .heading-li-media {
+            padding: 0 0 8px 10px !important;
+         }
+         .privacy-media {
+            width: 33% !important;
+         }
+      }
+
    </style>
 </head>
 
@@ -61,20 +134,20 @@
    <!-- end of logo-table -->
 
    <!-- middle-table -->
-   <table style="padding: 0 20px 0 20px;">
+   <table>
       <!-- heading section -->
       <tbody>
          <tr>
-            <td colspan="2" style="padding: 20px 0 20px 0;">
+            <td colspan="2" style="padding: 20px;" class="heading-td-media">
                <h1 style="font-weight: normal;">Heading 1</h1>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc
                   eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras
                   vitae pretium enum, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim
                   libero nec est efficitu, a tincidunt orci elementum.</p>
-               <ul>
-                  <li style="padding: 0 0 8px 25px;">Super Interesting Bullet Point 1</li>
-                  <li style="padding: 0 0 8px 25px;">Super Interesting Bullet Point 2</li>
-                  <li style="padding: 0 0 8px 25px;">Super Interesting Bullet Point 3</li>
+               <ul class="ul-media">
+                  <li style="padding: 0 0 8px 25px;" class="heading-li-media">Super Interesting Bullet Point 1</li>
+                  <li style="padding: 0 0 8px 25px;" class="heading-li-media">Super Interesting Bullet Point 2</li>
+                  <li style="padding: 0 0 8px 25px;" class="heading-li-media">Super Interesting Bullet Point 3</li>
                </ul>
             </td>
          </tr>
@@ -82,9 +155,9 @@
 
       <!-- main info section -->
       <tbody style="text-align: center;">
-         <tr>
+         <tr class="tr-media">
             <!-- blue left column -->
-            <td style="padding: 0 20px 0 0;"> 
+            <td style="padding: 0 20px 0 20px;" class="blue-media"> 
                <div style="background-color: #4FC1E9; color: white; padding: 20px 0 20px 0;">
                   <h2 style="font-size: 32px; font-weight: 400; margin: 0;">$299</h2>
                   <p style="margin: 0;">per month</p>
@@ -106,7 +179,7 @@
             </td> <!-- end of blue left column -->
 
             <!-- yellow right column -->
-            <td style="padding: 0 0 0 20px;">
+            <td style="padding: 0 20px 0 20px;" class="yellow-media">
                <div style="background-color: #FFCD53; color: white; padding: 20px 0 20px 0;">
                   <h2 style="font-size: 32px; font-weight: 400; margin: 0;">$499</h2>
                   <p style="margin: 0;">per month</p>
@@ -132,9 +205,9 @@
       <!-- contact section -->
       <tbody>
          <tr>
-            <td colspan="2" style="text-align: center; padding: 30px 0 20px 0;">
-               <h4 style="font-size: 25px; font-weight: 400; padding-bottom: 20px; margin: 0;">Want to learn more? Contact Us Today!</h4>
-               <p><a href="#" class="button">Contact Us</a></p>
+            <td colspan="2" style="text-align: center; padding: 30px 0 20px 0;" class="contact-td-media">
+               <h4 style="font-size: 25px; font-weight: 400; padding: 0 20px 25px 20px; margin: 0;">Want to learn more? Contact Us Today!</h4>
+               <p class="contact-para-media"><a href="#" class="button">Contact Us</a></p>
             </td>
          </tr>
       </tbody> <!-- end of contact section -->
@@ -142,16 +215,16 @@
    <!-- end of middle-table -->
 
    <!-- footer table -->
-   <table style="background-color: #33495D; color: white; padding: 30px 0 30px 0; margin-top: 10px; width: 100%;">
+   <table style="background-color: #33495D; color: white; padding: 30px 0 30px 0; margin-top: 10px; width: 100%;" class="footer-table-media">
       <tbody>
          <tr>
-            <td style="text-align: right; border-right: 1px solid white; padding-right: 10px; font-size: 15px;">
+            <td style="text-align: right; border-right: 1px solid white; padding-right: 10px; font-size: 15px;" class="company-media">
                <a href="#">CompanyA.com</a>
             </td>
-            <td style="text-align: center; width: min-content; font-size: 15px;">
+            <td style="text-align: center; width: 18%; font-size: 15px;" class="privacy-media">
                <a href="#">Privacy Policy</a>
             </td>
-            <td style="text-align: left; border-left: 1px solid white; padding-left: 10px; font-size: 15px;">
+            <td style="text-align: left; border-left: 1px solid white; padding-left: 10px; font-size: 15px;" class="unsubscribe-media">
                <a href="#">Unsubscribe</a>
             </td>
          </tr>
